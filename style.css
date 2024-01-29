@@ -4,9 +4,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fffff3;
+  background-image: url(src/img/subtle-stripes.png);
 }
 header {
-  background-color: #00a3d9;
+  background-color: #af4dcd;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -35,7 +36,7 @@ ul {
 }
 
 footer {
-  background-color: aqua;
+  background-color: rgb(80, 9, 115);
   text-align: center;
   padding: 20px;
 }
