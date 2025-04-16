@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Currículo Jefferson da Silva Nascimento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   </head>
   <body>
     <header>
@@ -13,7 +19,7 @@
           <img
             src="src/img/1690919142556.jpg"
             alt="Minha Foto"
-            class="profile-picture"
+            class="profile-picture rounded-full shadow-lg"
           />
         </div>
       </main>
@@ -27,103 +33,236 @@
       </p>
     </header>
     <main>
-      <section>
-        <h2>Informações de Contato</h2>
-
-        <ul>
-          <li>Estado: Pernanbuco-PE</li>
-          <li>Cidade: Glória do Goitá</li>
-          <li>Bairro: Vila Da Caixa</li>
-          <li>
-            E-mail: jeffersonnascimento20111@gmail.com /
-            jefferson-nascimento2011@hotmail.com
-          </li>
-          <li>Telefone: (81) 9 9914-2271 - (81) 9 7333-5742</li>
-          <li>
-            Endereço: Rua Vereador Severino José de Oliveira Santos N° B11
-          </li>
-        </ul>
+      <section class="flex justify-center mt-8">
+        <div class="max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
+          <div class="bg-gray-800 text-white text-center py-4">
+            <h2 class="text-2xl font-bold">Jefferson da Silva Nascimento</h2>
+            <p class="text-sm">Desenvolvedor Front-End</p>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold mb-2">Informações de Contato</h3>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li><strong>Estado:</strong> Pernambuco-PE</li>
+              <li><strong>Cidade:</strong> Glória do Goitá</li>
+              <li><strong>Bairro:</strong> Vila Da Caixa</li>
+              <li>
+                <strong>E-mail:</strong> jeffersonnascimento20111@gmail.com
+              </li>
+              <li><strong>Telefone:</strong> (81) 9 9914-2271</li>
+            </ul>
+            <h3 class="text-lg font-semibold mt-4 mb-2">
+              Habilidades Técnicas
+            </h3>
+            <ul class="text-sm text-gray-700 space-y-1">
+              <li>Linguagens: Java, JavaScript</li>
+              <li>Frameworks: React, Bootstrap</li>
+              <li>Banco de Dados: MySQL</li>
+              <li>Metodologias: Scrum, Ágil</li>
+            </ul>
+            <h3 class="text-lg font-semibold mt-4 mb-2">Sobre</h3>
+            <p class="text-sm text-gray-700">
+              Busco oportunidades na área de Análise e Desenvolvimento de
+              Sistemas, onde possa aplicar meus conhecimentos em Java,
+              JavaScript, React, Bootstrap, HTML e CSS, contribuindo para o
+              desenvolvimento de soluções inovadoras e eficientes.
+            </p>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Sobre</h2>
-        <p>
-          Busco oportunidades na área de Análise e Desenvolvimento de Sistemas,
-          onde possa aplicar meus conhecimentos em Java, JavaScript, React,
-          Bootstrap, HTML e CSS, contribuindo para o desenvolvimento de soluções
-          inovadoras e eficientes.
-        </p>
-      </section>
-      <section>
-        <h2>Formações</h2>
-        <ul>
-          <li>Ensino médio completo (EREM Professor Barros Guimarães)</li>
-          <li>
-            Superior completo em Análise e Desenvolvimento de Sistema –
-            UNINASSAU 2021 a 2024
-          </li>
-          <li>Java Script Udemy</li>
-          <li>Curos Algoritmo, Cuso em Video</li>
-          <li>Java Programação Orientada a Objetos Udemy</li>
-          <li>Curso HTML5 e CSS3, Udemy Curso em Video</li>
-          <li>Conhecimento em Typescript</li>
-          <li>Conhecimento em React</li>
-          <li>Banco de Dados MySQL Curso em Vídeo</li>
-          <li>Curso Assistente Administrativo Logística</li>
-          <li>Curso de informática Microlins Vitória de Santo Antão</li>
-          <li>
-            Curso básicos de informática, Windows, Word, Excel, Power Point
-          </li>
-          <li>Curso Academia SAP S/4HANA CO (Controladoria)</li>
-        </ul>
+      <section
+        class="mt-8 opacity-0 transition-opacity duration-1000"
+        id="formacoes"
+      >
+       
+
+      <section class="mt-8">
+        <h2 class="text-2xl font-bold mb-4 text-center">Formações</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="src/img/escolaerem.jpg"
+              alt="Ensino Médio"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-semibold text-center">
+              Ensino Médio Completo
+            </h3>
+            <p class="text-center">EREM Professor Barros Guimarães</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-green-500 to-teal-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="src/img/uninassau.png"
+              alt="Superior Completo"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-semibold text-center">Superior Completo</h3>
+            <p class="text-center">
+              Análise e Desenvolvimento de Sistemas – UNINASSAU (2021-2024)
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-pink-500 to-red-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="src/img/udemy.png"
+              alt="Cursos Online"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-semibold text-center">Cursos Online</h3>
+            <p class="text-center">JavaScript, Java, HTML5 e CSS3 – Udemy</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="src/img/cursoemvideo.jpg"
+              alt="Banco de Dados"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-semibold text-center">Banco de Dados</h3>
+            <p class="text-center">MySQL – Curso em Vídeo</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="src/img/primecursos.jpg"
+              alt="Assistente Administrativo"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-semibold text-center">
+              Assistente Administrativo
+            </h3>
+            <p class="text-center">Curso de Logística</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-green-500 to-cyan-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="src/img/microlins.jpg"
+              alt="Informática"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-semibold text-center">Informática</h3>
+            <p class="text-center">Microlins Vitória de Santo Antão</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="src/img/sap.webp"
+              alt="SAP Controladoria"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-semibold text-center">Academia SAP</h3>
+            <p class="text-center">S/4HANA CO (Controladoria)</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <img
+              src="src/img/microlins.jpg"
+              alt="Informática Básica"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-lg font-semibold text-center">
+              Informática Básica
+            </h3>
+            <p class="text-center">Windows, Word, Excel, PowerPoint</p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <ul>
-          <h2>Habilidades Técnicas</h2>
-          <li>Linguagens de Programação: Java, JavaScript</li>
-          <li>
-            Frameworks e Bibliotecas: React, Bootstrap, Spring Boot, Primeflex
-          </li>
-          <li>Web Technologies: HTML, CSS</li>
-          <li>Metodologias de Desenvolvimento: Ágil, Scrum</li>
-          <li>Banco de Dados: Conhecimento básico em SQL, Prisma Client</li>
-        </ul>
+      <section class="mt-8">
+        <h2 class="text-2xl font-bold mb-4 text-center">
+          Habilidades Técnicas
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <h3 class="text-lg font-semibold">Linguagens de Programação</h3>
+            <p>Java, JavaScript</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-green-500 to-cyan-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <h3 class="text-lg font-semibold">Frameworks</h3>
+            <p>React, Bootstrap, Spring Boot, Tailwind css</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <h3 class="text-lg font-semibold">Banco de Dados</h3>
+            <p>MySQL, Prisma Client</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-orange-500 to-yellow-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <h3 class="text-lg font-semibold">Metodologias</h3>
+            <p>Scrum, Ágil</p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Experiência Profissional</h2>
-
-        <ul>
-          <li>2012 – Empresa Compesa</li>
-          <p>Cargo: Cadastrador</p>
-          <li>2013 – Empresa ABL Engenharia</li>
-          <p>Cargo: Coletas de dados</p>
-          <li>2013-2018 – Empresa Esposende Calçados</li>
-          <p>Cargo: Logística</p>
-          <li>2019 – 2023 Empresa - BRF</li>
-          <p>Cargo: Auxiliar de Controladoria - Faturamento SAP</p>
-        </ul>
+      <section class="mt-8">
+        <h2 class="text-2xl font-bold mb-4 text-center">
+          Experiência Profissional
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <h3 class="text-lg font-semibold">2012 – Empresa Compesa</h3>
+            <p>Cargo: Cadastrador</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-green-500 to-teal-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <h3 class="text-lg font-semibold">2013 – Empresa ABL Engenharia</h3>
+            <p>Cargo: Coletas de dados</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-pink-500 to-red-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <h3 class="text-lg font-semibold">
+              2013-2018 – Empresa Esposende Calçados
+            </h3>
+            <p>Cargo: Logística</p>
+          </div>
+          <div
+            class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white p-4 rounded-lg shadow-lg"
+          >
+            <h3 class="text-lg font-semibold">2019 – 2023 Empresa BRF</h3>
+            <p>Cargo: Auxiliar de Controladoria - Faturamento SAP</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <div class="social-icons">
         <a
-          href="https://www.linkedin.com/in/jefferson-nascimento-4769a5260/"
+          href="https://www.linkedin.com/in/jefferson-nascimento2/"
           target="_blank"
-          ><img src="src/img/linkedin.png" alt="Imagem 1"
-        /></a>
-        <a href="https://github.com/Jefferson159" target="_blank"
-          ><img src="src/img/github.png" alt="Imagem 2"
-        /></a>
-        <a href="https://www.instagram.com/jefferson113n/" target="_blank"
-          ><img src="src/img/instagram.png" alt="Imagem 3"
-        /></a>
+        >
+          <img src="src/img/linkedin.png" alt="Imagem 1" />
+        </a>
+        <a href="https://github.com/Jefferson159" target="_blank">
+          <img src="src/img/github.png" alt="Imagem 2" />
+        </a>
+        <a href="https://www.instagram.com/jefferson113n/" target="_blank">
+          <img src="src/img/instagram.png" alt="Imagem 3" />
+        </a>
         <a
           href="https://www.facebook.com/jefferson.nascimento.3939/"
           target="_blank"
-          ><img src="src/img/facebook.png" alt="Imagem 3"
-        /></a>
-
+        >
+          <img src="src/img/facebook.png" alt="Imagem 3" />
+        </a>
         <a
           href="https://api.whatsapp.com/send?phone=8199142271"
           class="whatsapp-link"
@@ -133,5 +272,6 @@
         </a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
